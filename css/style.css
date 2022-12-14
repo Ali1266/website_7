@@ -1,0 +1,537 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url(../fonts/PT\ Sans/PT_Sans-Web-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(../fonts/PT\ Sans/PT_Sans-Web-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../fonts/Playfair\Display/PlayfairDisplay-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../fonts/Playfair\PlayfairDisplay-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url(../fonts/Post\ No\ Bills\ Jaffna/PostNoBillsJaffna-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    max-width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: 'PT Sans';
+}
+
+.header-1 {
+    padding: 14px 0;
+}
+
+.contacts-register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #969696;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacts-register a {
+    color: #969696;
+}
+
+.contacts a {
+    position: relative;
+    padding-left: 30px;
+    transition: color .3s;
+}
+
+.contacts a:hover {
+    color: #fff;
+}
+
+.contacts a::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/eva_phone-outline.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.contacts span {
+    position: relative;
+    padding-left: 14px;
+}
+
+.contacts span::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: #969696;
+    left: 0;
+    top: 2px;
+}
+
+.register {
+    display: flex;
+    gap: 5px;
+}
+
+.register a:first-child {
+    position: relative;
+    padding-left: 25px;
+}
+
+.register a:first-child::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/ic_sharp-log-in.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 1px;
+}
+
+.register a {
+    transition: color .3s;
+}
+
+.register a:hover {
+    color: #fff;
+}
+
+.header_2 {
+    background-color: #0F0F0F;
+}
+
+.logo {
+    font-family: 'Post No Bills Jaffna';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.logo-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    padding: 32px 20px;
+    color: #969696;
+    transition: all .3s;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.nav a:hover {
+    background-color: #1F1F1F;
+    color: #fff;
+}
+
+.block-1 {
+    background-image: url(../img/Rectangle\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 810px;
+}
+
+.block-1 {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    width: 320px;
+    height: 320px;
+    border: solid 3px #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.hero-title {
+    font-family: 'Post No Bills Jaffna';
+    font-size: 64px;
+    font-weight: 700;
+    border-bottom: solid 2px #fff;
+    line-height: 1;
+}
+
+.hero span {
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.hero-text {
+    line-height: 24px;
+    max-width: 730px;
+    text-align: center;
+}
+
+.season-collection {
+    font-family: 'Playfair Display';
+    display: flex;
+    justify-content: center;
+}
+
+.season {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.season-title {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 51px;
+    margin-bottom: 50px;
+}
+
+.season-title::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.watch-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.watch-card-img {
+    padding: 55px 23px;
+    background-color: #191B1C;
+}
+
+.watch-card-title {
+    margin: 25px 0 10px;
+    font-size: 18px;
+}
+
+.collection {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.collection-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.collection-title {
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 31px;
+    margin-bottom: 30px;
+}
+
+.collection-title::before {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button {
+    font-family: 'PT Sans';
+    padding: 12px 28px;
+    font-size: 18px;
+    border: solid 1px #fff;
+    transition: all .3s;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.collection_2018 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col_2018-content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col_2018-content-title {
+    position: relative;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    padding-bottom: 41px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.col_2018-content-title::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col_2018-content-text {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 471px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.arrivals {
+    display: flex;
+    justify-content: center;
+}
+
+.arrivals-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 150px 0;
+}
+
+.arrivals-content-title {
+    position: relative;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 41px;
+    margin-bottom: 81px;
+}
+
+.arrivals-content-title::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrivals-cards {
+    font-family: 'Playfair Display';
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 23px;
+    row-gap: 40px;
+}
+
+.brands {
+    background-color: #0F0F0F;
+}
+
+.brands-content {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands-content-title {
+    position: relative;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 41px;
+    margin-bottom: 40px;
+}
+
+.brands-content-title::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brands-content-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-top {
+    background-image: url(../img/Rectangle\ 15.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.footer-content {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-categories-link {
+    padding: 10px 20px;
+    background-color: #0F0F0F;
+    font-size: 14px;
+    display: block;
+    transition: border .3s;
+}
+
+.footer-categories-link:hover {
+    padding: 9px 19px;
+    background: none;
+    border: solid 1px #fff;
+}
+
+.footer-categories-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content-title {
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.footer-input-bitton {
+    display: flex;
+    margin-top: 37px;
+}
+
+.footer-input-bitton input {
+    padding: 10px 15px;
+    background-color: #fff;
+    opacity: 0.4;
+    color: #000;
+}
+
+.footer-button {
+    padding: 10px 20px;
+    background-color: #0F0F0F;
+    transition: border .3s;
+}
+
+.footer-button:hover {
+    padding: 9px 19px;
+    background: none;
+    border: solid 1px #fff;
+}
+
+.footer-shop-text,
+.footer-mailing-text {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 350px;
+}
+
+.footer-bottom {
+    background-color: #0F0F0F;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rights {
+    font-size: 12px;
+    color: #D0D0D0;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 700;
+    color: #D0D0D0;
+    text-decoration: underline;
+}
